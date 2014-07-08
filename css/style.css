@@ -2,11 +2,15 @@
 /* MAIN STYLES
 *************************/
 .grid-container {
+	min-width: 320px;
 	max-width: 960px;
 }
 
+
 body {
-	background: #fff9ef;
+	background: #eef0e6;
+	color: #00303E;
+	font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -14,14 +18,24 @@ a {
 }
 
 fieldset {
-	background: #c1d1de;
+	background: #FFF9EF;
 	border-radius: 5px;
-	color: #00303E;
+	border: none;
+	border-bottom: 2px solid #E1DFE6;
 }
 
 header {
 	text-align: center;
 	color: #00303E;
+}
+
+legend {
+	background: #FFF9EF;
+	padding: 5px;
+	border-bottom: 2px solid #e1dfe6;
+	border-right: 2px solid #e1dfe6;
+	border-radius: 5px;
+	/*text-align: center;*/
 }
 
 .error {
@@ -33,15 +47,31 @@ input[type="email"],
 input[type="password"] {
 	width: 100%;
 	margin: 0;
-	padding: 0;
 }
 select,
 input,
 .cc {
 	margin-bottom: 10px !important;
+	border: none;
+	border-radius: 5px;
 }
-select {
-	background: #FFF9EF;
+select,
+input {
+	background: #E4E6DF;
+	padding: 5px;
+}
+input[type="submit"] {
+	background: #3f8abf;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 15px;
+	cursor: pointer;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+	border-width: 1px 1px 3px;
+	border-style: solid;
+	border-color: #326e99;
 }
 
 
@@ -59,8 +89,9 @@ input[type="radio"] {
  	background:url(cc.png);
  	display: block;
  	border-radius: 5px;
- 	border: 1px solid #aaa;
+ 	border: 1px solid #E4E6DF;
  	float: left;
+ 	margin-right: 25px !important;
 }
 
 .cc .mc {
